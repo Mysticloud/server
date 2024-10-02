@@ -182,6 +182,7 @@ def download(
         yt_dl_options = {
             "format": "worst[ext=mp4]/worst" if is_video else "worstaudio/worst",
             "outtmpl": join(temp_dir, "%(id)s.%(ext)s"),
+            "proxy": "http://146.103.50.18:8888/",
             "default_search": "auto",
             "restrictfilenames": True,
             "extract_flat": "in_playlist",
