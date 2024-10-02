@@ -46,7 +46,7 @@ from yt_dlp import YoutubeDL
 
 DATA_FOLDER = join(dirname(abspath(__file__)), "data")
 FFMPEG_PATH = getenv("FFMPEG_PATH", "ffmpeg")
-SANJUUNI_PATH = join(dirname(abspath(__file__)), "sanjuuni") #getenv("SANJUUNI_PATH", "sanjuuni")
+SANJUUNI_PATH = getenv("SANJUUNI_PATH", "sanjuuni")
 DISABLE_OPENCL = bool(getenv("DISABLE_OPENCL"))
 
 
